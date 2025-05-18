@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.headernav {
+    height: 100px;
+    background-color: #b8e3e9;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    background-color: #4f7c82;
+    padding: 15px;
+	
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	animation-name: slideInLeft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-direction:normal;
+	animation-fill-mode:none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color:#b8e3e9 ;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:active { color: aquamarine;}
+
+#bodynav {
+    min-height: 700px;
+    background-color: #93b1b5;
+    text-align: center;
+    font-family:"Times New Roman";
+    padding: 20px 0;
+}
+
+.footer {
+    min-height: 150px;
+    background-color: #4f7c82;
+    text-align: center;
+    padding-top: 50px ;
+}
+
+
+h1, h2 {
+    text-align: center;
+    font-family:"Times New Roman";
+	animation-name: slideInLeft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-direction:normal;
+	animation-fill-mode:none;
+}
+
+h3,h4 {
+    font-family: "Times New Roman";
+	animation-name: slideInLeft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-direction:normal;
+	animation-fill-mode:none;
+}
+
+p {
+    text-align: center; 
+    font-size: 18px; 
+    line-height: 1.8; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    padding: 20px; 
+    background-color: #4f7c82; 
+    border-left: 4px solid #93b1b5; 
+    border-radius: 8px; 
+    font-family: "Times New Roman"; 
+    font-weight: 400; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px; 
+        padding: 10px; 
+        margin: 15px; 
+    }
+}
+
+img {
+    display: block;
+    margin: 30px auto 10px;
+    max-width: 300px;
+    height: auto;
+	animation-name: slideInLeft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-direction:normal;
+	animation-fill-mode:none;
+}
+#formslink{
+	text-align: center;
+	font-size: 20px;
+	animation-name: slideInLeft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-direction:normal;
+	animation-fill-mode:none;
+}
+@keyframes slideInLeft{
+	from{
+		transform: translatex(-300px);
+	}
+
+	to{
+		transform: translatex(0);
+	}
+	
+}
+.icon-spin {
+    animation: spin 6s linear infinite;
+    transition: transform 0.3s ease;
+}
+.icon-spin:hover {
+    transform: scale(1.2);
+    animation: pulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { transform: scale(1.2); }
+    to { transform: scale(1.4); }
+}
+#draggableLogo {
+    position: absolute;
+    cursor: move;
+    z-index: 1000;
+}
+
+
